@@ -2,8 +2,9 @@
     --DarkBlue: #0183fc;
     --LightBlue: #b8dcff;
     --Purple: #9792e4;
-    --orange: #fdc15f;
-    --dark-grey:#333333;
+    --Orange: #fdc15f;
+    --DarkGrey:#333333;
+    --TextHeight: 2rem;
 }
 
 *{
@@ -69,8 +70,11 @@ header{
 
 /* Main */
 
-.pad-top{
+/* First Section */
+
+.pad-top-bot{
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .container{
@@ -127,19 +131,75 @@ header{
     margin-bottom: 20px;
 }
 
-.card>div>i{
+.d-flex-column .card>div>i{
     color: var(--DarkBlue);
 }
 
 .card>div>p{
-    line-height: 2rem;
+    line-height: var(--TextHeight);
 }
 
 .a-center{
     text-align: center;
 }
 
+/* .mar-bot{
+    margin-bottom: 50px;
+} */
 
+/* Second Section */
+
+.container-small{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.bg-color-purple{
+    background-color: var(--Purple);
+}
+
+.img-plan{
+    width: 100%;
+}
+
+.bg-color-white{
+    background-color: white;
+}
+
+.strategic-col{
+    color: white;
+}
+
+.strategic-col>*{
+    margin-bottom: 40px;
+    line-height: var(--TextHeight);
+}
+
+.strategic-col>h2{
+    font-size: 28px;
+}
+
+.card.bg-color-white{
+    text-align: center;
+    line-height: var(--TextHeight);
+}
+
+.card.bg-color-white>*{
+    margin-bottom: 20px;
+}
+
+.strategic-button{
+    border-radius: 50%;
+    background-color: var(--Purple);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+
+.strategic-button i{
+    transform: translateY(-10px);
+}
 /* responsive */
 
 @media all and (min-width: 768px){
@@ -149,6 +209,14 @@ header{
 
     .big-card{
         width: 66%;
+    }
+
+    .card.bg-color-white{
+        width: 100%;
+    }
+
+    .strategic-col>h2{
+        font-size: 70px;
     }
 }
 
@@ -183,5 +251,23 @@ header{
         width: 50%;
     }
 
-    
+    .container-small{
+        max-width: 890px;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .strategic-col>h2{
+        font-size: 28px;
+    }
+
+    .strategic-col, .card.bg-color-white{
+        width: calc(50% - 30px);
+    }
+
+    .card.bg-color-white{
+        align-self: flex-end;
+    }
 }
