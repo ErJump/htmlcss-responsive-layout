@@ -85,7 +85,7 @@ header{
 }
 
 .container{
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -299,6 +299,10 @@ header{
     line-height: var(--TextHeight);
 }
 
+.benefits>.card.bg-color-white>*:last-child{
+    margin-bottom: 0;
+}
+
 .benefits>.card.bg-color-white>h2{
     color: var(--Purple);
     font-size: 50px;
@@ -307,6 +311,10 @@ header{
 .benefits>.card.bg-color-white>h3{
     color: var(--Purple);
     font-size: 25px;
+}
+
+.benefits>.card.bg-color-white>p{
+    color: var(--DarkGrey);
 }
 
 .benefits-button{
@@ -322,6 +330,70 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; 
+}
+
+/* About-Us */
+
+
+.col-about-us{
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+.col-about-us>*, .col-reference>*{
+    margin-bottom: 40px;
+    display: block;
+}
+
+.col-about-us>*:last-child, .col-about-us>*:last-child{
+    margin-bottom: 0;
+}
+
+.col-about-us>h2{
+    color: var(--Purple);
+    font-size: 45px;
+}
+
+.col-about-us>p{
+    font-size: 20px;
+}
+
+.col-reference>span{
+    color: var(--Purple);
+    font-size: 30px;
+    font-weight: 700;
+}
+.p-relative{
+    position: relative;
+    display: inline-block;
+}
+
+.p-relative>img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.fa-solid.fa-quote-left.fa-4x{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--Purple);
+}
+
+.about-button{
+    border-radius: 20px;
+    background-color: var(--Purple);
+    color: white;
+    font-weight: 700;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.fa-brands.fa-linkedin{
+    margin-right: 10px;
 }
 
 /* responsive */
@@ -363,6 +435,29 @@ header{
 
     .benefits>.card.bg-color-white>h2{
         font-size: 80px;
+    }
+
+    .sec-about-us>.container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .col-about-us{
+        width: 50%;
+    }
+
+    .col-reference{
+        width: 33%;
+        align-self: flex-start;
+    }
+
+    .p-relative>img{
+        height: 250px;
+        width: 250px;
+    }
+
+    .col-about-us>h2{
+        font-size: 60px;
     }
 
 }
