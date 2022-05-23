@@ -38,6 +38,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 .menu{
@@ -77,6 +78,10 @@ header{
 .pad-top-bot{
     padding-top: 100px;
     padding-bottom: 100px;
+}
+
+.pad-top-bot-second{
+    padding: 50px 0 50px 0;
 }
 
 .container{
@@ -181,12 +186,12 @@ header{
     font-size: 28px;
 }
 
-.card.bg-color-white{
+.container-small>.card.bg-color-white{
     text-align: center;
     line-height: var(--TextHeight);
 }
 
-.card.bg-color-white>*{
+.container-small>.card.bg-color-white>*{
     margin-bottom: 20px;
 }
 
@@ -272,6 +277,52 @@ header{
     margin-left: 5px;
 }
 
+/* With-Us */
+
+.sec-with-us>.container>h2{
+    color: white;
+    font-size: var(--TitleSize);
+    text-align: center;
+    line-height: 3rem;
+    margin-bottom: 50px;
+}
+
+.benefits>.card.bg-color-white{
+    align-items: left;
+    width: 100%;
+    padding: 50px;
+}
+
+.benefits>.card.bg-color-white>*{
+    align-items: left;
+    margin-bottom: 30px;
+    line-height: var(--TextHeight);
+}
+
+.benefits>.card.bg-color-white>h2{
+    color: var(--Purple);
+    font-size: 50px;
+}
+
+.benefits>.card.bg-color-white>h3{
+    color: var(--Purple);
+    font-size: 25px;
+}
+
+.benefits-button{
+    border-radius: 20px;
+    background-color: var(--Purple);
+    color: white;
+    font-weight: 700;
+    display: inline-block;
+    padding: 5px 60px;
+}
+
+.benefits{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
 
 /* responsive */
 
@@ -284,7 +335,7 @@ header{
         width: 66%;
     }
 
-    .card.bg-color-white{
+    .container-small>.card.bg-color-white{
         width: 100%;
     }
 
@@ -303,6 +354,15 @@ header{
 
     .card.bg-color-purple>img{
         margin-bottom: 0px;
+    }
+
+    .benefits>.card.bg-color-white{
+        width: calc(50% - 20px);
+        padding: 40px;
+    }
+
+    .benefits>.card.bg-color-white>h2{
+        font-size: 80px;
     }
 
 }
@@ -334,6 +394,10 @@ header{
         padding-top: 150px;
     }
 
+    .pad-top-bot-second{
+        padding: 100px 0 100px 0;
+    }
+
     .big-card div{
         width: 50%;
     }
@@ -343,18 +407,27 @@ header{
         width: 80%;
         margin: 0 auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between;   
+    }
+
+    .container-small>.card.bg-color-white{
+        width: 50%;
     }
 
     .strategic-col>h2{
         font-size: 28px;
     }
 
-    .strategic-col, .card.bg-color-white{
+    .strategic-col, .container-small>.card.bg-color-white{
         width: calc(50% - 30px);
     }
 
-    .card.bg-color-white{
+    .container-small>.card.bg-color-white{
         align-self: flex-end;
+    }
+
+    .benefits>.card.bg-color-white{
+        width: calc(100% / 3 - 20px);
+        padding: 40px;
     }
 }
