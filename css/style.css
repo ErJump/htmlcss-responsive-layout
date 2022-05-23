@@ -1,0 +1,187 @@
+:root{
+    --DarkBlue: #0183fc;
+    --LightBlue: #b8dcff;
+    --Purple: #9792e4;
+    --orange: #fdc15f;
+    --dark-grey:#333333;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* Header */
+
+header{
+    background-color: var(--DarkBlue);
+    width: 100vw;
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+}
+
+.p-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menu{
+    display: none;
+}
+
+.menu ul{
+    list-style: none;
+}
+
+.menu ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    line-height: 70px;
+}
+
+.logo img{
+    display: block;
+}
+
+.button{
+    border-radius: 20px;
+    color: black !important;
+    padding: 5px 10px;
+    background-color: white;
+}
+
+/* Main */
+
+.pad-top{
+    padding-top: 100px;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.d-flex-column{
+    display: flex;
+    direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.button-blue{
+    color: white;
+    background-color: var(--DarkBlue);
+    display: inline-block;
+    border-radius: 20px;
+    width: 200px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.button-blue i{
+    margin-right: 5px;
+}
+
+.card{
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.card img{
+    width: 80%;
+    display: block;
+    margin: 0 auto -20px auto;
+}
+
+.card h3{
+    color: var(--DarkBlue);
+    font-size: 24px;
+}
+
+.bg-color-lightblue{
+    background-color: var(--LightBlue);
+}
+
+.card>div>*{
+    margin-bottom: 20px;
+}
+
+.card>div>i{
+    color: var(--DarkBlue);
+}
+
+.card>div>p{
+    line-height: 2rem;
+}
+
+.a-center{
+    text-align: center;
+}
+
+
+/* responsive */
+
+@media all and (min-width: 768px){
+    .card{
+        width: calc(100% / 3 - 20px);
+    }
+
+    .big-card{
+        width: 66%;
+    }
+}
+
+@media all and (min-width: 992px){
+
+    .container-header, .container{
+        max-width: 992px;
+    }
+    .menu{
+        display: block;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .big-card{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .card img{
+        align-self: flex-end;
+        width: 50%;
+    }
+
+    .pad-top{
+        padding-top: 140px;
+    }
+
+    .big-card div{
+        width: 50%;
+    }
+
+    
+}
