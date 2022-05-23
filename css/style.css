@@ -5,6 +5,8 @@
     --Orange: #fdc15f;
     --DarkGrey:#333333;
     --TextHeight: 2rem;
+    --TitleSize: 2.5rem;
+    --SubTitle: 1.25rem;
 }
 
 *{
@@ -200,6 +202,77 @@ header{
 .strategic-button i{
     transform: translateY(-10px);
 }
+
+/* Testimonials */
+
+.sec-testimonials .container .a-center>*{
+    margin-bottom: 20px;
+    line-height: var(--TextHeight);
+} 
+
+.sec-testimonials .container{
+    display: flex;
+    flex-direction: column;
+} 
+
+.sec-testimonials .container .a-center>h2{
+    font-size: var(--TitleSize);
+    line-height: 3rem;
+    color: var(--Purple);
+}
+
+.sec-testimonials .container .a-center>p{
+    font-size: var(--SubTitle);
+}
+
+.sec-testimonials .container .a-center>h5{
+    font-size: 20px;
+}
+
+.sec-testimonials .container>div{
+    margin-bottom: 40px;
+}
+
+.card.bg-color-purple{
+    text-align: center;
+    color: white;
+}
+
+.card.bg-color-purple>div>*{
+    margin-bottom: 20px;
+}
+
+.card.bg-color-purple>img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.card.bg-color-purple>div>p{
+    line-height: var(--TextHeight);
+    font-size: 20px;
+}
+
+.card.bg-color-purple>div>h4{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.card.bg-color-purple>div>p::before{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; 
+    content: "\f10d";
+    margin-right: 5px;
+}
+
+.card.bg-color-purple>div>p::after{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; 
+    content: "\f10e";
+    margin-left: 5px;
+}
+
+
 /* responsive */
 
 @media all and (min-width: 768px){
@@ -218,6 +291,20 @@ header{
     .strategic-col>h2{
         font-size: 70px;
     }
+
+    .card.bg-color-purple{
+        width: 100%;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card.bg-color-purple>img{
+        margin-bottom: 0px;
+    }
+
 }
 
 @media all and (min-width: 992px){
@@ -243,8 +330,8 @@ header{
         width: 50%;
     }
 
-    .pad-top{
-        padding-top: 140px;
+    .pad-top-bot{
+        padding-top: 150px;
     }
 
     .big-card div{
