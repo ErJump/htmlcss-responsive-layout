@@ -480,6 +480,7 @@ header{
 
 .click-button-blue:hover, .click-button-purple:hover, .click-button-white:hover{
     box-shadow: 0 1px 3px #666666; 
+    cursor: pointer;
 }
 
 /* Responsive */
