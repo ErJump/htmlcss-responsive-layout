@@ -1,7 +1,9 @@
 :root{
     --DarkBlue: #0183fc;
+    --Blue: #3e9ef8;
     --LightBlue: #b8dcff;
     --Purple: #9792e4;
+    --LightPurple: #b0abf1;
     --Orange: #fdc15f;
     --DarkGrey:#333333;
     --TextHeight: 2rem;
@@ -454,6 +456,30 @@ header{
 .sec-footer>.container>*{
     margin-bottom: 30px;
     display: block;
+}
+
+/* Hover Buttons */
+
+.click-button-white, .click-button-purple, .click-button-blue{
+    transition: .5s;
+}
+
+.click-button-white:hover{
+    background-color: var(--DarkGrey);
+    color: white !important;
+}
+
+.click-button-purple:hover{
+    background-color: var(--LightPurple);
+    color: grey !important;
+}
+
+.click-button-blue:hover{
+    background-color: var(--Blue);
+}
+
+.click-button-blue:hover, .click-button-purple:hover, .click-button-white:hover{
+    box-shadow: 0 1px 3px #666666; 
 }
 
 /* Responsive */
