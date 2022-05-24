@@ -502,6 +502,11 @@ header{
         font-size: 70px;
     }
 
+    .card img{
+        margin: 0 auto -20px 0;
+        width: 50%;
+    }
+
     .card.bg-color-purple{
         width: 100%;
         text-align: left;
